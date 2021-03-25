@@ -1,4 +1,4 @@
-from technical_indicators_lib.indicators import (
+from technical_indicators.indicators import (
     ADI, ATR, BollingerBands, CCI, CMF, CHO, CHV, DC, DPO, EMV, EMA, FI, KC, KST, MI, MED, MOM,
     MFI, MACD, NVI, OBV, PVT, PC, PO, ROC, ROCV, RSI, SMA, VLT, StochasticKAndD,
     Trix, TR, TSI, TYP, VHF, VO, WCL

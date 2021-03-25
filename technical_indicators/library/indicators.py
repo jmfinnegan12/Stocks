@@ -1404,7 +1404,7 @@ class MFI:
                          df["close"]) / 3
         df["TP_prev"] = df["TP"].shift(1)
         df["PORN"] = np.zeros(len(df))
-        df.loc[self.df["TP"] > df["TP_prev"], "PORN"] = np.float(1)
+        df.loc[df["TP"] > df["TP_prev"], "PORN"] = np.float(1)
         df["RMF"] = df["TP"] * df["volume"]
         df["NMF"], df["PMF"] = np.zeros(len(df)), np.zeros(len(df))
         df.loc[df["PORN"] == 0.0, "NMF"] = df["RMF"]
